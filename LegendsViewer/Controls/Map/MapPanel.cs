@@ -13,8 +13,8 @@ namespace LegendsViewer.Controls.Map
         public World World;
 
         public DwarfTabControl TabControl;
-        public Rectangle ZoomBounds;
-        public Point MousePanStart, Center, MouseClickLocation, MouseLocation;
+        public Rectangle View;
+        public Point MousePanStart, MouseClickLocation, MouseLocation;
         public double Zoom = 1.0, PixelWidth = 1.0, PixelHeight = 1.0, ZoomChange = 0.15, ZoomMax = 10.0, ZoomMin = 0.2;
 
         public int YearMin, YearMax;
@@ -32,6 +32,14 @@ namespace LegendsViewer.Controls.Map
         {
             base.OnPaint(e);
         }
+
+        private void Pan(int X, int Y)
+        {
+            View.Offset(X, Y);
+            Refresh();
+        }
+
+
     }
 
     class MapModual : Control
