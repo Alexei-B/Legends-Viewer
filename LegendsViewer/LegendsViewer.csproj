@@ -91,7 +91,7 @@
     <Compile Include="Controls\HTML\Utilities\BrowserUtil.cs" />
     <Compile Include="Controls\HTML\Utilities\HTMLStyleUtil.cs" />
     <Compile Include="Controls\HTML\WorldConstructionPrinter.cs" />
-	<Compile Include="Controls\HTML\Utilities\SkillDictionary.cs" />
+    <Compile Include="Controls\HTML\Utilities\SkillDictionary.cs" />
     <Compile Include="Controls\Map\dlgPopulation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,8 +117,12 @@
     <Compile Include="Controls\HTML\WorldStatsPrinter.cs" />
     <Compile Include="Controls\Map\HeatMapMaker.cs" />
     <Compile Include="Controls\Map\MapControl.cs" />
+    <Compile Include="Controls\Map\MapControlRE.cs" />
     <Compile Include="Controls\Map\MapDrawer.cs" />
     <Compile Include="Controls\Map\MapMenu.cs" />
+    <Compile Include="Controls\Map\MapPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\Map\MapUtil.cs" />
     <Compile Include="Controls\Map\PathMaker.cs" />
     <Compile Include="Controls\PageControl.cs" />

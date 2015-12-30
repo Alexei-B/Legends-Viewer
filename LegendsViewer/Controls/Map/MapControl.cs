@@ -21,12 +21,14 @@ namespace LegendsViewer.Controls
         public bool CivsToggled, SitesToggled, WarsToggled, BattlesToggled;
         public Object FocusObject;
         public World World;
+
         public MapControl(World world, Object focusObject, DwarfTabControl dwarfTabControl)
         {
             Title = "Map";
             if (focusObject != null && focusObject is DwarfObject) Title += " - " + (focusObject as DwarfObject).ToLink(false, (focusObject as DwarfObject));
             World = world; FocusObject = focusObject; TabControl = dwarfTabControl;
         }
+
         public override Control GetControl()
         {
             if (MapPanel == null || MapPanel.IsDisposed)
